@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <span>Interactive Quiz</span>
+        </div>
+        <div class="nav-right">
+            <a href="quiz.html" id="admin-button">Admin</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Take the Quiz</h1>
+
+        <div id="user-info">
+            <label>Name:</label>
+            <input type="text" id="user-name" placeholder="Enter your name" required><br>
+
+            <label>Roll No:</label>
+            <input type="text" id="user-roll-no" placeholder="Enter your roll number" required><br>
+
+            <label>Gmail:</label>
+            <input type="email" id="user-gmail" placeholder="Enter your Gmail" required><br>
+
+            <label>College Name:</label>
+            <input type="text" id="user-college" placeholder="Enter your college name" required><br>
+        </div>
+
+        <button id="start-quiz-button" onclick="startQuiz()" disabled>Start Quiz</button>
+
+        <div id="quiz-questions" style="display: none;"></div>
+        <button id="submit-button" onclick="submitQuiz()" style="display: none;">Submit Quiz</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

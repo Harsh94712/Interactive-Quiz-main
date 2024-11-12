@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz - Admin Section</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Interactive Quiz - Admin Section</h1>
+
+        <div id="admin-section">
+            <label>Question:</label>
+            <input type="text" id="question" placeholder="Enter the question"><br>
+
+            <label>Option A:</label>
+            <input type="text" id="option-a" placeholder="Enter option A"><br>
+
+            <label>Option B:</label>
+            <input type="text" id="option-b" placeholder="Enter option B"><br>
+
+            <label>Option C:</label>
+            <input type="text" id="option-c" placeholder="Enter option C"><br>
+
+            <label>Option D:</label>
+            <input type="text" id="option-d" placeholder="Enter option D"><br>
+
+            <label>Correct Answer:</label>
+            <input type="text" id="correct-answer" placeholder="Enter the correct answer"><br>
+
+            <button onclick="addQuestion()">Add Question</button>
+        </div>
+
+        <h2>Questions Added:</h2>
+        <ul id="question-list"></ul>
+
+        <button onclick="goToQuiz()">Go to Quiz</button>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>
